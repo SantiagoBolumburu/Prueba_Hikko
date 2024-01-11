@@ -61,18 +61,24 @@ Lo requerido se implementó mediante 2 endpoints REST:
 
 #### Ejemplos de uso
 
-Obtener el usuario con menos seguidores
-- Request
+Obtener el usuario con menos seguidores:
+
+- Request:
+
 ![get_all_users_request](documentation/get_all_users_request.PNG)
 
-- Response
+- Response:
+
 ![get_all_users_response](/documentation/get_all_users_response.PNG)
 
 Obtener el usuario con menos seguidores
-- Request
+
+- Request:
+
 ![get_least_followed_user_request](/documentation/get_least_followed_user_request.PNG)
 
-- Response
+- Response:
+
 ![get_least_followed_user_response](/documentation/get_least_followed_user_response.PNG)
 
 
