@@ -31,7 +31,7 @@ Una vez lo anterior este prepara, se ejecuta desde una consola el comando:
 Python <ruta de /main.py> <Ruta a la carpeta con los archivos “.json”>
 ```
 
-Si los archivos “.json” se colocaron en “/examples/data” del mismo proyecto, se puede omitir el parámetro con la ruta a las carpeta de los archivos:
+Se puede omitir el parámetro con la ruta a las carpeta de los archivos (en cuyo caso su usara la ruta por defecto, definida en "./app/config.json"):
 ```
 Python <ruta de /main.py>
 ```
@@ -63,6 +63,8 @@ Lo requerido se implementó mediante 2 endpoints REST:
 
 - Los ejemplos se realizaron con los datos provistos para la prueba (también se subieron en la carpeta **/ejemplos/data**) 
 
+---
+
 Obtener el usuario con menos seguidores:
 
 - Request:
@@ -91,7 +93,14 @@ Obtener el usuario con menos seguidores:
 
 |Archivo|Descripcion|
 |-------|-----------|
-|README.md|Documentacion del proyecto|
+|README.md|Documentación del proyecto|
+|.gitignore|Archivos que git ignora.|
+|./examples/data/|Datos de prueba.|
+|./documentacion/|Carpeta para archivos usados para complemetar la documentación (en este caso solo imagenes usadas en la seccion **Ejemplos de uso**).|
+|./app/requirements.txt|Imports (dependencias) del proyecto. Nno incluye imports estandar de Python como "os", "json", "sys", etc, ni dependencias internas (a otros archivos del mismo proyecto) (de puede usar con "pip install" como se mostro anteriormente para descargar dichas dependencias).|
+|./app/main.py|Punto de entrada a la aplicacion, donde se instnacian los servicios a utilizar.|
+|./app/constants.py|Punto centralizado donde se mantienen las contantes utilizadas en multiples puntos del proyecto.|
+|./app/config.json|Archivo de configuracion. Lo unico que configura es la ruta por defecto de los datos (usuarios)|
 
 
 ## ACLARACIONES
