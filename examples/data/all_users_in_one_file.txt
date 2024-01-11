@@ -1,0 +1,72 @@
+[
+  {
+    "user_id": "1",
+    "users_following": [
+      "2",
+      "9"
+    ]
+  },
+  {
+    "user_id": "2",
+    "users_following": [
+      "1",
+      "7"
+    ]
+  },
+  {
+    "user_id": "3",
+    "users_following": [
+      "4",
+      "10"
+    ]
+  },
+  {
+    "user_id": "4",
+    "users_following": [
+      "2",
+      "8"
+    ]
+  },
+  {
+    "user_id": "5",
+    "users_following": [
+      "1",
+      "10"
+    ]
+  },
+  {
+    "user_id": "6",
+    "users_following": [
+      "3",
+      "4"
+    ]
+  },
+  {
+    "user_id": "7",
+    "users_following": [
+      "6",
+      "9"
+    ]
+  },
+  {
+    "user_id": "8",
+    "users_following": [
+      "10",
+      "1"
+    ]
+  },
+  {
+    "user_id": "9",
+    "users_following": [
+      "3",
+      "8"
+    ]
+  },
+  {
+    "user_id": "10",
+    "users_following": [
+      "9",
+      "2"
+    ]
+  }
+]
