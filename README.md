@@ -31,6 +31,7 @@ Lo requerido se implementó mediante 2 endpoints REST:
 - Para obtener el usuario con menos seguidores:
 
 | GET | ruta_base/api/users/leastfollowed |
+| ----------- | ----------- |
 | HEADERS | NONE |
 | PARAMS | NONE |
 | BODY | NONE |
@@ -38,6 +39,7 @@ Lo requerido se implementó mediante 2 endpoints REST:
 - Para obtener todos los usuarios con sus seguidores:
 
 | GET | ruta_base/api/users |
+| ----------- | ----------- |
 | HEADERS | NONE |
 | PARAMS | NONE |
 | BODY | NONE |
