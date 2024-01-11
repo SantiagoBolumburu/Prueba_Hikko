@@ -1,6 +1,8 @@
 ## Prueba_Hikko
 Prueba para evaluar mi nivel de Python
 
+El proyecto el una API que se inicializa desde un script.
+
 ## Pre-Requisitos
 - Tener Python 3 instalado 
     - (la aplicación se desarrolló con Python 3.11.3, por lo que se recomienda tener como mínimo esa versión)
@@ -20,7 +22,7 @@ pip install -r requirements.txt
 
 ## Uso
 ### Inicialización 
-El proyecto el una API que se inicializa desde un script (app/main.py). 
+El punto de entrada a la aplicacion es el archivo **app/main.py**. 
 
 Además de descargar el repositorio, también hay que tener preparados los archivos “.json” con los usuario (todos tienen que estar dentro de una misma carpeta). Esta carpeta puede ser la carpeta “/examples/data” de este proyecto, o una carpeta cualquiera del dispositivo local.
 
