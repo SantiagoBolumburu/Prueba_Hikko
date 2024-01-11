@@ -3,9 +3,9 @@ Prueba para evaluar mi nivel de Python
 
 ## Pre-Requisitos
 - Tener Python 3 instalado 
--- (la aplicación se desarrolló con Python 3.11.3, por lo que se recomienda tener como mínimo esa versión)
+    - (la aplicación se desarrolló con Python 3.11.3, por lo que se recomienda tener como mínimo esa versión)
 - Tener Pip instalado 
--- Si se instalo Python desde la página oficial (https://www.python.org/) entonces ya está instalado
+    - Si se instalo Python desde la página oficial (https://www.python.org/) entonces ya está instalado
 
 ## Requerimientos
 - Flask 3.0.0
@@ -24,19 +24,23 @@ Python <ruta a /main.ty>
 
 ### Endpoints
 - Ruta base: no se configuro ni la ruta ni el puerto, por lo que se usaran los por defecto:
--- http://127.0.0.1:5000
+    - ruta_base = http://127.0.0.1:5000
+
 Lo requerido se implementó mediante 2 endpoints REST:
-Usuario con menor cantidad de seguidores:
-Para obtener el usuario con menos seguidores:
-GET: ruta_base/api/users/leastfollowed
-HEADERS: NONE
-PARAMS: NONE
-BODY: NONE
-Para obtener todos los usuarios con sus seguidores:
-GET: ruta_base/api/users
-HEADERS: NONE
-PARAMS: NONE
-BODY: NONE
+
+- Para obtener el usuario con menos seguidores:
+
+| GET | ruta_base/api/users/leastfollowed |
+| HEADERS | NONE |
+| PARAMS | NONE |
+| BODY | NONE |
+
+- Para obtener todos los usuarios con sus seguidores:
+
+| GET | ruta_base/api/users |
+| HEADERS | NONE |
+| PARAMS | NONE |
+| BODY | NONE |
 
 ### AVISOS
 1. Se asumió que todos valores de "users_following" se corresponden a un "user_id" que si existe
