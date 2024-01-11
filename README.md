@@ -28,21 +28,39 @@ Python <ruta a /main.ty>
 
 Lo requerido se implementó mediante 2 endpoints REST:
 
-- Para obtener el usuario con menos seguidores:
+- Para obtener todos los usuarios, con los usuarios que los siguen:
 
-| GET | ruta_base/api/users/leastfollowed |
+| GET | <ruta_base>/api/users |
 | ----------- | ----------- |
 | HEADERS | NONE |
 | PARAMS | NONE |
 | BODY | NONE |
 
-- Para obtener todos los usuarios con sus seguidores:
+- Para obtener el usuario con menos seguidores (aleatorio entre los posibles, si hay menos que 1):
 
-| GET | ruta_base/api/users |
+| GET | <ruta_base>/api/users/leastfollowed |
 | ----------- | ----------- |
 | HEADERS | NONE |
 | PARAMS | NONE |
 | BODY | NONE |
+
+
+#### Ejemplos de uso
+
+Obtener el usuario con menos seguidores
+- Request
+![get_all_users_request](documentation/get_all_users_request.PNG)
+
+- Response
+![get_all_users_response](/documentation/get_all_users_response.PNG)
+
+Obtener el usuario con menos seguidores
+- Request
+![get_least_followed_user_request](/documentation/get_least_followed_user_request.PNG)
+
+- Response
+![get_least_followed_user_response](/documentation/get_least_followed_user_response.PNG)
+
 
 ### AVISOS
 1. Se asumió que todos valores de "users_following" se corresponden a un "user_id" que si existe
