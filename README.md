@@ -21,11 +21,18 @@ pip install -r requirements.txt
 ## Uso
 ### Inicialización 
 El proyecto el una API que se inicializa desde un script (app/main.py). 
-Además de descargar el repositorio, también hay que tener preparados los archivos “.json” con los usuarios: todos tienen que estar dentro de una misma carpeta. Esta carpeta puede ser la carpeta “/examples/data” de este proyecto, o una carpeta cualquiera del dispositivo local.
+
+Además de descargar el repositorio, también hay que tener preparados los archivos “.json” con los usuario (todos tienen que estar dentro de una misma carpeta). Esta carpeta puede ser la carpeta “/examples/data” de este proyecto, o una carpeta cualquiera del dispositivo local.
+
 Una vez lo anterior este prepara, se ejecuta desde una consola el comando:
+```
 Python <ruta a /main.py> <Ruta a la carpeta con los archivos “.json”>
+```
+
 Si los archivos “.json” se colocaron en “/examples/data” del mismo proyecto, se puede omitir el parámetro con la ruta a las carpeta de los archivos:
-Python <ruta a /main.ty>
+```
+Python <ruta a /main.py>
+```
 
 ### Endpoints
 - Ruta base: no se configuro ni la ruta ni el puerto, por lo que se usaran los por defecto:
