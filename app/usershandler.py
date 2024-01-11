@@ -1,6 +1,8 @@
 import constants as c
 import os, json
 
+user_handler = None
+
 def create_user(user_id:str) -> dict:
     return {c.USER_ID_PROPERTY : user_id, c.USER_FOLLOWERS_PROPERTY:[] }
 

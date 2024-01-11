@@ -6,19 +6,18 @@ import usershandler as uh
 __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
 
 app = Flask(__name__)
-user_handler = None
 
-@app.route("/users")
+@app.route("/users", methods=['GET'])
 def get_all_user_from_json():
-    return jsonify(user_handler.get_users_from_json_in_id_followers_format())
+    return jsonify(user_handler.get_users_from_json_in_id_followers_format()), 200
 
-@app.route("/users/leastfollowed")
+@app.route("/users/leastfollowed", methods=['GET'])
 def get_least_followed_user_from_json():
     users = user_handler.get_users_from_json_in_id_followers_format()
 
     users_with_least_followers = user_handler.get_users_with_least_followers(users)
 
-    return jsonify(random.choice(users_with_least_followers))
+    return jsonify(random.choice(users_with_least_followers)), 200
 
 def get_users_dir_path() -> str:
     users_dir_path = ''
