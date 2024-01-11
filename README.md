@@ -59,7 +59,9 @@ Lo requerido se implementó mediante 2 endpoints REST:
 | BODY | NONE |
 
 
-#### Ejemplos de uso
+### Ejemplos de uso
+
+- Los ejemplos se realizaron con los datos provistos para la prueba (también se subieron en la carpeta **/ejemplos/data**) 
 
 Obtener el usuario con menos seguidores:
 
@@ -67,7 +69,7 @@ Obtener el usuario con menos seguidores:
 
 ![get_all_users_request](documentation/get_all_users_request.PNG)
 
-- Response:
+- Response (no se muestra en la totalidad):
 
 ![get_all_users_response](/documentation/get_all_users_response.PNG)
 
