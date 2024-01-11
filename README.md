@@ -82,7 +82,7 @@ Obtener el usuario con menos seguidores
 ![get_least_followed_user_response](/documentation/get_least_followed_user_response.PNG)
 
 
-### AVISOS
+## ACLARACIONES
 1. Se asumió que todos valores de "users_following" se corresponden a un "user_id" que si existe
 2. No se contempló la posibilidad de "user_id" duplicados
 3. Se asumió que todos los archivos “.json” tienen usuarios en el formato mostrado en la letra de la prueba, y que solo hay un usuario por archivo
