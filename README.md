@@ -8,10 +8,15 @@ Prueba para evaluar mi nivel de Python
     - Si se instalo Python desde la página oficial (https://www.python.org/) entonces ya está instalado
 
 ## Requerimientos
-- Flask 3.0.0
+#### Flask 3.0.0
+Para instalarlo se usa el siguiente comando:
+```
 pip install Flask
+```
 Alternativamente, como se incluyo el “requirements.txt” en la carpta “app”, se puede navegar desde la consola a dicha carpeta y ejecutar el comando:
+```
 pip install -r requirements.txt
+```
 
 ## Uso
 ### Inicialización 
