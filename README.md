@@ -73,15 +73,24 @@ El punto de entrada a la aplicacion es el archivo **app/main.py**.
 
 Además de descargar el repositorio, también hay que tener preparados los archivos “.json” con los usuario (todos tienen que estar dentro de una misma carpeta). Esta carpeta puede ser la carpeta “/examples/data” de este proyecto, o una carpeta cualquiera del dispositivo local.
 
-Una vez lo anterior este prepara, se ejecuta desde una consola el comando:
+Una vez lo anterior este preparado, se ejecuta desde una consola el comando:
 ```
 Python <ruta de /main.py> <Ruta a la carpeta con los archivos “.json”>
 ```
 
-Se puede omitir el parámetro con la ruta a las carpeta de los archivos (en cuyo caso su usara la ruta por defecto, definida en "./app/config.json"):
+Se puede omitir el parámetro con la ruta a las carpeta de los archivos (en cuyo caso se usara la ruta por defecto, definida en "./app/config.json"):
 ```
 Python <ruta de /main.py>
 ```
+
+##### Aclaraciones:
+- La capeta por defecto es **“./examples/data/”** de este repositorio. 
+- La carpeta por defecto se puede cambiar, para hacerlo la ruta a la nueva carpeta por defecto se coloca como valor del atributo **"users_dir_path_form_utils"** en el archivo **“./app/config.json”**.
+	- IMPORTANTE: dicha ruta debe ser relativa, empezando desde la carpeta **./app/utils/** de este repositorio. Tomar como ejemplo el valor actual:
+```
+    "users_dir_path_form_utils" : "../../examples/data"
+``` 
+ 
 
 ### Endpoints
 - Ruta base: no se configuro ni la ruta ni el puerto, por lo que se usaran los por defecto:
