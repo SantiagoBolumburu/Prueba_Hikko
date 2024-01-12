@@ -150,18 +150,18 @@ Obtener el usuario con menos seguidores:
 |Archivo|Descripcion|
 |-------|-----------|
 |README.md|Documentación del proyecto|
-|.gitignore|Archivos que nos se necesita/quiere subir a git.|
+|.gitignore|Archivos que no se necesita/quiere subir a git.|
 |./examples/data/|Datos de prueba.|
-|./documentacion/|Carpeta para archivos usados para complemetar la documentación (en este caso solo imagenes usadas en la seccion **"Ejemplos de uso"**).|
+|./documentacion/|Carpeta para archivos usados para complementar la documentación (en este caso solo imagenes usadas en la seccion **"Ejemplos de uso"**).|
 |./app/requirements.txt|Imports (dependencias) del proyecto. No incluye imports estandar de Python como "os", "json", "sys", etc; ni dependencias internas (a otros archivos del mismo proyecto) (se puede usar con "pip install" como se mostro anteriormente para descargar dichas dependencias).|
 |./app/main.py|Punto de entrada a la aplicacion, donde se instancian los servicios a utilizar.|
 |./app/constants.py|Punto centralizado donde se mantienen las constantes utilizadas en multiples puntos del proyecto.|
-|./app/config.json|Archivo de configuracion. Lo unico que se configura es la ruta por defecto de los datos (usuarios)|
-|./app/utils/|Carpeta donde se implmenetan funcionalidades genericas que se usan o podrian llegar a usarse en varias partes del proyecto|
-|./app/utils/users.py|Funcionalidad referente a los usuarios. En este caso crearlos en distintos formatos o realizar operacion sobre listas de ellos.|
-|./app/utils/script_inputs.py|Funcionalidad relacionada a los parametros que el se esperan al inicializar la aplicacion (En este caso, solo la ruta a la carpeta con los archivos ".json" con los usuarios).|
-|./app/utils/custom_decorators.py|Decoradores implementados manualmente. En este caso, el unico implementado "**singleton(...)**" permite mantener una unica instancia en toda aplicacion de las calses a la que se aplique.|
-|./app/routes/|Carpeta para los archivos donde se defininen los endpoints de la API|
+|./app/config.json|Archivo de configuracion. Lo unico que se configura actualemnte es la ruta por defecto de los datos (usuarios).|
+|./app/utils/|Carpeta donde se implementan funcionalidades genericas que se usan o podrian llegar a usarse en varias partes del proyecto.|
+|./app/utils/users.py|Funcionalidad referente a los usuarios. En este caso crearlos en distintos formatos o realizar operaciones sobre listas de ellos.|
+|./app/utils/script_inputs.py|Funcionalidad relacionada a los parametros que se esperan al inicializar la aplicacion (En este caso, solo la ruta a la carpeta con los archivos ".json" con los usuarios).|
+|./app/utils/custom_decorators.py|Decoradores implementados manualmente. En este caso, el unico implementado es: "**singleton(...)**", que permite mantener una unica instancia en toda aplicacion de las clases a la que se aplique.|
+|./app/routes/|Carpeta para los archivos donde se defininen los endpoints de la API.|
 |./app/routes/users.py|Aqui se definien los endpoints correspondiente a la ruta **"/api/users"**.|
 |./app/data_access/|Carpeta donde se implementa la lectura de datos externos a la aplicacion.|
 |./app/data_access/users.py|Aqui se implementa la carga de usuarios desde archivos **".json"**.|
