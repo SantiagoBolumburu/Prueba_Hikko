@@ -163,5 +163,5 @@ Obtener el usuario con menos seguidores:
 3. Se asumió que todos los archivos “.json” tienen usuarios en el formato mostrado en la letra de la prueba, y que solo hay un usuario por archivo.
 4. Puede que haya casos borde sin contemplar.
 5. Se asume que en el directorio/carpeta donde se guardan los archivos “.json”, todos los archivos “.json” cumplen con el formato esperado (presentado en la sección de **“Objetivos”**).
-    - Los archivos en con otras extensiones son ignorados, por lo que su presencia no altera el funcionamiento de la aplicación.
+    - Los archivos con otras extensiones son ignorados, por lo que su presencia no altera el funcionamiento de la aplicación.
 
