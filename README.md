@@ -3,6 +3,53 @@ Prueba para evaluar mi nivel de Python
 
 El proyecto es una API que se inicializa desde un script.
 
+
+## Objetivos
+
+
+### Resumido
+
+El objetivo es crear una API que, a partir de datos almacenados en archivos “.json”, los procese y mediante los endpoints necesarios, cumpla con los requerimientos listados en la sección **“Objetivos -> Explayado”** (la siguiente).
+
+
+### Explayado
+
+El objetivo de este proyecto que crear una API que implemente los endpoints necesarios para cumplir con los siguientes requerimientos
+
+- Un endpoint que devuelva todos los usuarios. Para cada usuario debe proveer sus identificadores (id/ids) y una lista de identificadores de usuarios que lo siguen a él.
+
+- Un endpoint que devuelva el usuario que cuanta con menos seguidores. Debe mostrar tanto el identificador de dicho usuario, como numero de seguidores con el que cuenta.
+
+	- En caso de que haya mas de un usuario que cumpla con dicha condición, se debe devolver 1 al azar. 
+
+Dicha información sobre los usuarios debe obtenerse de un directorio donde se almacenan los usuarios bajo el siguiente formato: 
+
+- Cada usuario se almacena en un archivo en formato JSON, el cual contiene únicamente un usuario
+
+- Para cada usuario, se cuenta con la siguiente información:
+
+    - “user_id”: (string) contiene el identificado del usuario
+
+    - “users_following”: (array de strings) los identificadores de los usuarios a los que este usuario sigue
+
+Ejemplo de usuario:
+
+- Nombre archivo: u01.json
+
+- Contenido:
+```
+{
+    "user_id": "1",
+    "users_following": [
+        "2",
+        "9"
+    ]
+}
+```
+
+Mas ejemplos de pueden encontrar en la carpeta **“./examples/data/”** de este repositorio.
+
+
 ## Pre-Requisitos
 - Tener Python 3 instalado 
     - (la aplicación se desarrolló con Python 3.11.3, por lo que se recomienda tener como mínimo esa versión)
@@ -115,3 +162,6 @@ Obtener el usuario con menos seguidores:
 2. No se contempló la posibilidad de "user_id" duplicados.
 3. Se asumió que todos los archivos “.json” tienen usuarios en el formato mostrado en la letra de la prueba, y que solo hay un usuario por archivo.
 4. Puede que haya casos borde sin contemplar.
+5. Se asume que en el directorio/carpeta donde se guardan los archivos “.json”, todos los archivos “.json” cumplen con el formato esperado (presentado en la sección de **“Objetivos”**).
+    - Los archivos en con otras extensiones son ignorados, por lo que su presencia no altera el funcionamiento de la aplicación.
+
