@@ -84,9 +84,9 @@ Python <ruta de /main.py>
 ```
 
 ##### Aclaraciones:
-- La capeta por defecto es **“./examples/data/”** de este repositorio. 
-- La carpeta por defecto se puede cambiar, para hacerlo la ruta a la nueva carpeta por defecto se coloca como valor del atributo **"users_dir_path_form_utils"** en el archivo **“./app/config.json”**.
-	- IMPORTANTE: dicha ruta debe ser relativa, empezando desde la carpeta **./app/utils/** de este repositorio. Tomar como ejemplo el valor actual:
+- La capeta por defecto es: **“./examples/data/”**, de este repositorio. 
+- La carpeta por defecto se puede cambiar, para hacerlo la ruta a la nueva carpeta por defecto se coloca como valor del atributo **"users_dir_path_form_utils"**, en el archivo **“./app/config.json”**.
+	- **IMPORTANTE**: dicha ruta debe ser relativa, empezando desde la carpeta **"./app/utils/"** de este repositorio. Tomar como ejemplo el valor actual:
 ```
     "users_dir_path_form_utils" : "../../examples/data"
 ``` 
